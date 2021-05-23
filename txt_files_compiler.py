@@ -4,7 +4,6 @@
 #finally compile it all into one file
 
 import os
-import shutil
 
 path = 'E:\Programming\Automate the Boring Stuff with Python Programming'
 text_file = open('C:\\Users\\Dell\\Documents\\Recap.txt', 'w')
