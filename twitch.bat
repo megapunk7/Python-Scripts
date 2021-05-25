@@ -1,0 +1,1 @@
+@py C:\Users\Dell\Documents\PythonScripts\twitch_scraper.py %*
