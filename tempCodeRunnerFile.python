@@ -1,0 +1,14 @@
+import requests
+import bs4
+
+def phonePrice(phone_url):
+    response = requests.get(phone_url)
+    response.raise_for_status()
+
+    soup = bs4.BeautifulSoup(response.text, 'html.parser')
+    contents = soup.select('#module_product_price_1 > div > div > span')
+
+    return contents[0].text.strip()
+
+url = input("enter product address:")
+print("the price is "+ phonePrice(url))
