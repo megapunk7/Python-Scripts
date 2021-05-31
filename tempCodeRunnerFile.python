@@ -1,14 +1,12 @@
-import requests
-import bs4
+import math
 
-def phonePrice(phone_url):
-    response = requests.get(phone_url)
-    response.raise_for_status()
+n = int(input())
 
-    soup = bs4.BeautifulSoup(response.text, 'html.parser')
-    contents = soup.select('#module_product_price_1 > div > div > span')
+for i in range(n):
+    r = int(input())
+    squareArea = (2*r)*(2*r)
 
-    return contents[0].text.strip()
+    circleArea = math.pi*(r*r)
 
-url = input("enter product address:")
-print("the price is "+ phonePrice(url))
+    print("Case " + str(i+1) + ": ", end = "")
+    print(squareArea - circleArea)
