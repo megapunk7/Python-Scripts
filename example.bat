@@ -1,1 +1,0 @@
-@py C:\Users\Dell\Documents\PythonScripts\test.py %*
